@@ -1,6 +1,6 @@
 {
     "name": "simplyunnamed/seat-auditor",
-    "description": "Seat plugin to see if members have doctrines in the correct locations",
+    "description": "Seat plugin to audit intentional changes to squads.",
     "type": "seat-plugin",
     "license": "GPL-2.0-only",
     "authors": [

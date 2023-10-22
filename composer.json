@@ -1,0 +1,25 @@
+{
+    "name": "simplyunnamed/seat-auditor",
+    "description": "Seat plugin to see if members have doctrines in the correct locations",
+    "type": "seat-plugin",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Lars Gullestrup",
+            "email": "lgullestrup88@gmail.com"
+        }
+    ],
+    "require": {
+        "eveseat/web": "^4.0"
+    },
+    "autoload": {
+        "SimplyUnnamed\\Seat\\Auditor\\": "src/"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SimplyUnnamed\\Seat\\Auditor\\SeatAuditorServiceProvider"
+            ]
+        }
+    }
+}

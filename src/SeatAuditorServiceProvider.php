@@ -20,44 +20,28 @@ class SeatAuditorServiceProvider extends AbstractSeatPlugin
         SquadMember::observe(SquadMemberObserver::class);
         SquadRole::observe(SquadRoleObserver::class);
         Squad::observe(SquadObserver::class);
-
-        // $this->loadRoutesFrom(__DIR__.'/Http/routes.php');
-
-        // $this->add_views();
-        // $this->add_routes();
     }
 
     public function register()
     {
 
-    //    $newEntries = require __DIR__ .'/Config/doctrine.sidebar.php';
-    //    $entries = $this->app['config']->get("package.sidebar.doctrine.entries");
-    //    $this->app['config']->set("package.sidebar.doctrine.entries", array_merge($entries, $newEntries));
+
     }
 
-    public function add_routes()
-    {
-        
-    }
-
-    public function add_views()
-    {
-        // $this->loadViewsFrom(__DIR__.'/resources/views', 'doctrine');
-    }
 
     public function getName(): string
     {
-        return 'Seat Auditor';
+        return 'Seat Squad Auditor';
     }
 
     public function getPackageRepositoryUrl(): string
     {
-        return 'https://github.com/SimplyUnnamed/seat-auditor/';
+        return 'https://github.com/SimplyUnnamed/seat-squad-auditor/';
     }
 
     public function getPackagistPackageName(): string
     {
-        return 'seat-auditor';
+        return 'seat-squad-auditor';
     }
 
     public function getPackagistVendorName(): string

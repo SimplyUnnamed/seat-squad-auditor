@@ -13,7 +13,9 @@
         "eveseat/web": "^4.0"
     },
     "autoload": {
-        "SimplyUnnamed\\Seat\\Auditor\\": "src/"
+        "psr-4": {
+            "SimplyUnnamed\\Seat\\Auditor\\": "src/"
+        }
     },
     "extra": {
         "laravel": {

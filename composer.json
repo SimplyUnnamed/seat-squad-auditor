@@ -1,5 +1,5 @@
 {
-    "name": "simplyunnamed/seat-auditor",
+    "name": "simplyunnamed/seat-squad-auditor",
     "description": "Seat plugin to audit intentional changes to squads.",
     "type": "seat-plugin",
     "license": "GPL-2.0-only",

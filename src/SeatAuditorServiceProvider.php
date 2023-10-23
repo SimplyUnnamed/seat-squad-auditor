@@ -7,9 +7,11 @@ use Seat\Services\AbstractSeatPlugin;
 use Seat\Web\Models\Squads\SquadMember;
 use Seat\Web\Models\Squads\SquadRole;
 use Seat\Web\Models\Squads\Squad;
+use Seat\Web\Models\User;
 use SimplyUnnamed\Seat\Auditor\Observers\SquadMemberObserver;
 use SimplyUnnamed\Seat\Auditor\Observers\SquadRoleObserver;
 use SimplyUnnamed\Seat\Auditor\Observers\SquadObserver;
+use SimplyUnnamed\Seat\Auditor\Observers\UserObserver;
 
 class SeatAuditorServiceProvider extends AbstractSeatPlugin
 {
@@ -20,6 +22,7 @@ class SeatAuditorServiceProvider extends AbstractSeatPlugin
         SquadMember::observe(SquadMemberObserver::class);
         SquadRole::observe(SquadRoleObserver::class);
         Squad::observe(SquadObserver::class);
+        User::observe(UserObserver::class);
     }
 
     public function register()
